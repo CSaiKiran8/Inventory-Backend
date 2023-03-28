@@ -32,3 +32,7 @@ mongoose.connection.once("open", () => {
   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 });
 
+app.get('/', (req, res) => {
+  res.send("Welcome to Inventory App");
+})
+
